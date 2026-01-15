@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="box">
+    <h2>ATM Login</h2>
+    <form method="post">
+        <input type="password" name="pin" placeholder="Enter PIN">
+        <button type="submit">Login</button>
+    </form>
+    {% if error %}<p class="error">{{error}}</p>{% endif %}
+</div>
+</body>
+</html>

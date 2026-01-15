@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="box">
+    <h2>Balance: ${{balance}}</h2>
+
+    <form action="/withdraw" method="post">
+        <input type="number" name="amount" placeholder="Withdraw Amount">
+        <button>Withdraw</button>
+    </form>
+
+    <form action="/deposit" method="post">
+        <input type="number" name="amount" placeholder="Deposit Amount">
+        <button>Deposit</button>
+    </form>
+
+    <form action="/changepin" method="post">
+        <input type="password" name="old" placeholder="Old PIN">
+        <input type="password" name="new" placeholder="New PIN">
+        <button>Change PIN</button>
+    </form>
+
+    <a href="/statement" target="_blank">Mini Statement</a><br><br>
+    <a href="/logout">Exit</a>
+</div>
+</body>
+</html>
+
